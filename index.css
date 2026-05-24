@@ -1,0 +1,236 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+
+header {
+  background: #222;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+ 
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  color: #00bcd4;
+  transform: scale(1.1);
+}
+
+
+#darkModeToggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: transform 0.3s;
+}
+
+#darkModeToggle:hover {
+  transform: rotate(20deg);
+}
+
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #00bcd4, #009688);
+  color: white;
+  transition: background 0.5s ease;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: #009688;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 2.0s, transform 1.4s;
+}
+
+.hero .btn:hover {
+  background: #00bcd4;
+  color: white;
+  transform: translateY(-3px);
+}
+
+
+.grid {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  gap: 90px;
+  margin-top: 50px;
+  margin: 50px;
+}
+.fotoDeChrome {
+ width: 100%;          
+  height: auto;         
+  object-fit: cover;    
+  max-height: 100%;    
+}
+
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 35px;
+  transition: transform 0.5s, box-shadow 0.3s;
+  height: 318px;
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+.skills {
+  background: #eee;
+  padding: 60px 20px;
+  text-align: center;
+  transition: background 0.5s ease;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  display: inline-block;
+  margin: 10px 20px;
+  font-weight: bold;
+}
+
+
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #009688;
+  box-shadow: 0 0 8px rgba(0,150,136,0.5);
+}
+
+form button {
+  background: #009688;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #00796b;
+}
+
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  transition: background 0.5s ease;
+}
+
+
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark header {
+  background: #1f1f1f;
+}
+
+body.dark nav a {
+  color: #e0e0e0;
+}
+
+body.dark .hero {
+  background: linear-gradient(to right, #333, #111);
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark .skills {
+  background: #222;
+}
