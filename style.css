@@ -271,3 +271,11 @@ canvas#background {
   width: 100%; height: 100%;
   z-index: -1;
 }
+
+.block1 {
+ width: 100%;
+    border-radius: 8px;
+    height: 172px;
+    
+
+}
