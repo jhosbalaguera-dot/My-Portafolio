@@ -108,7 +108,7 @@ h2.misProyectos {
 }
 .cadrst {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
   gap: 80px;
   margin-top: 40px;
   margin: 50px;
@@ -133,7 +133,7 @@ h2.misProyectos {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 35px;
   transition: transform 0.5s, box-shadow 0.5s;
-  height: 450px;
+  height: 500px;
   box-shadow: 0 0 10px 2px #008080; 
 
 }
